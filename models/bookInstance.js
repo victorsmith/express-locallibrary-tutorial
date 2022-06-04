@@ -1,7 +1,6 @@
 var mongoose = require('mongoose');
 const { DateTime } = require('luxon');
-
-var Schema = mongoose.Schema;
+const Schema = mongoose.Schema;
 
 var BookInstanceSchema = new Schema({
 	book: { type: Schema.Types.ObjectId, ref: 'Book', required: true }, //reference to the associated book
